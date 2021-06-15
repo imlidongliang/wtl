@@ -1,0 +1,6 @@
+/* components/iconfont/iconfont.wxss */
+@import "../../assets/fonts/iconfont";
+
+.iconfont {
+    font-size: inherit;
+}

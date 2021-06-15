@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/tabBar/index/index",
+    "pages/tabBar/follow/follow",
+    "pages/tabBar/my/my",
+    "pages/search/search"
+  ],
+  
+  "tabBar": {
+    "color": "#e2e2e2",
+    "selectedColor": "#32c55b",
+    "list": [{
+      "pagePath": "pages/tabBar/index/index",
+      "text": "首页",
+      "iconPath": "assets/images/compass-outline.png",
+      "selectedIconPath": "assets/images/compass.png"
+    }, {
+      "pagePath": "pages/tabBar/follow/follow",
+      "text": "收藏",
+      "iconPath": "assets/images/heart-outline.png",
+      "selectedIconPath": "assets/images/heart.png"
+    }, {
+      "pagePath": "pages/tabBar/my/my",
+      "text": "我的",
+      "iconPath": "assets/images/account-outline.png",
+      "selectedIconPath": "assets/images/account.png"
+    }]
+  },
+  
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "无它旅",
+    "navigationBarTextStyle": "black"
+  },
+  
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

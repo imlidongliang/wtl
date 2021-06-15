@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#32c55b",
+  "navigationBarTextStyle": "white",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "p-head": "../../../components/head/head",
+    "search-bar": "../../../components/search-bar/search-bar"
+  }
+}

@@ -1,0 +1,35 @@
+.page-head {
+    background: #33c55d;
+    color: #ffffff;
+}
+
+
+.page-head-toolbar {
+    height: 20px;
+}
+
+.page-head-title-wrap {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.page-head-title {
+    flex: 1;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.padding-left {
+    padding-left: 10px;
+}

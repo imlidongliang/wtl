@@ -1,0 +1,8 @@
+<p-head title="搜索" back="true">
+    <view class="search-wrap">
+        <view class="serch-input-group">
+            <iconfont class="icon" icon="search"></iconfont>
+            <input class="search-input" auto-focus placeholder="{{ placeholder }}" />
+        </view>
+    </view>
+</p-head>

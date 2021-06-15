@@ -1,0 +1,10 @@
+<view class="search-bar tag-class">
+  <view class="search-inner" bindtap="toSearchPage">
+    <view class="serch-input-group">
+      <iconfont class="icon" icon="search"></iconfont>
+      <view class="search-input">
+        <text class="search-text">{{ placeholder }}</text>
+      </view>
+    </view>
+  </view>
+</view>

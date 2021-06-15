@@ -1,0 +1,10 @@
+<view class="page-head">
+  <view class="page-head-toolbar" style="height: {{ statusBarHeight }}"></view>
+  <view class="page-head-title-wrap" style="height: {{ titleHeight }}">
+    <view wx:if="{{back}}" class="back" bindtap="back" style="height: {{ titleHeight }}">
+      <iconfont icon="back"></iconfont>
+    </view>
+    <h1 class="page-head-title {{ back? '': 'padding-left'}}">{{title}}</h1>
+  </view>
+  <slot></slot>
+</view>
