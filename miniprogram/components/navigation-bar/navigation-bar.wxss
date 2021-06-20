@@ -1,0 +1,87 @@
+.navigation-bar {
+    overflow: hidden;
+    color: #040404
+}
+
+.navigation-bar .hidden {
+    display: none;
+}
+
+.navigation-bar--inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5001;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding-right: 190rpx;
+    width: calc(100% - 190rpx);
+}
+
+.navigation-bar .navigation-bar--inner.android {
+    height: 48px;
+    padding-right: 222rpx;
+    width: calc(100% - 222rpx);
+
+}
+
+.navigation-bar--placeholder {
+    height: 44px;
+    background: #f7f7f7;
+    position: relative;
+    z-index: 50;
+}
+
+.navigation-bar .navigation-bar--placeholder.android {
+    height: 48px;
+}
+
+.navigation-bar--left {
+    position: relative;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-bar--left .navigation-bar-btn {
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.navigation-bar--left .back {
+    font-size: 12px;
+    width: 1em;
+    height: 2em;
+    margin-right: 10px;
+    -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24' viewBox='0 0 12 24'%3E  %3Cpath fill-opacity='.9' fill-rule='evenodd' d='M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5 10 4.563 2.682 12 10 19.438z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    mask: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24' viewBox='0 0 12 24'%3E  %3Cpath fill-opacity='.9' fill-rule='evenodd' d='M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5 10 4.563 2.682 12 10 19.438z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: currentColor;
+}
+
+.navigation-bar--center {
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-bar-loading {
+    margin-right: 4px;
+    font-size: 0;
+}
+
+.navigation-bar-loading.right {
+    margin-right: 0;
+    margin-left: 4px;
+}
+
+.navigation-bar--right {
+    margin-right: 16px;
+}

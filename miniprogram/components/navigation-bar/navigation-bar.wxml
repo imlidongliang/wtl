@@ -1,0 +1,15 @@
+<view class="navigation-bar">
+  <view class="navigation-bar--placeholder {{system}}" style="padding-top: {{statusBarHeight}}"></view>
+  <view class="navigation-bar--inner {{system}} {{show? '': 'hidden'}}" style="padding-top: {{statusBarHeight}}; color: {{color}};background: {{background}};padding-right: {{paddingRight}};width: {{width}};">
+    <view class="navigation-bar--left" style="width: {{ textAlign === '' || textAlign === 'center' ? paddingRight : ''  }}" bindtap="back">
+      <view wx:if="{{back}}" class="navigation-bar-btn back" hover-class="active"></view>
+    </view>
+    <view class="navigation-bar--center" style="justify-content: {{ justifyContent }}; text-align: {{textAlign}}">
+      <view wx:if="{{loading}}" class="navigation-bar-loading {{loadingPosition >0 ? 'right' : ''}}" style="order: {{loadingPosition}}">
+        <view class="loading" style="width: {{loadingSize}}rpx;height: {{loadingSize}}rpx;"></view>
+      </view>
+      <text>{{title}}</text>
+    </view>
+    <view class="navigation-bar--right"></view>
+  </view>
+</view>
