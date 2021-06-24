@@ -1,0 +1,67 @@
+<view class="card tag-class">
+  <view class="card-inner">
+    <!-- header -->
+    <view class="card-header">
+      <view class="avatar">
+        <image src="" mode="aspectFill" lazy-load="false" binderror="/assets/images/avatar.png"></image>
+      </view>
+      <view class="heading">
+        <view class="author">唐伯虎</view>
+        <view class="creat-time">2021-07-25</view>
+      </view>
+    </view>
+    <!-- body -->
+    <view class="card-body">
+      <view class="title">发现岭南之美发现岭南之美发现岭南之美发现岭南之美发现岭南之美发现岭南之美发现岭南之美发现岭南之美</view>
+      <view class="description">发现岭南之美发现岭南之美发现岭南之美发现岭南之美发现岭南之美发现岭南之美发现岭南之美</view>
+      <view class="image-list">
+        <view class="image-item">
+          <image class="image" src="../../assets/images/tmp.jpg" mode="aspectFill" lazy-load="true"></image>
+        </view>
+        <view class="image-item">
+          <image class="image" src="../../assets/images/tmp.jpg" mode="aspectFill" lazy-load="true"></image>
+        </view>
+        <view class="image-item">
+          <image class="image" src="../../assets/images/tmp.jpg" mode="aspectFill" lazy-load="true"></image>
+        </view>
+      </view>
+      <view class="location-wrap">
+        <view class="location">广州</view>
+      </view>
+    </view>
+    <!-- footer -->
+    <view class="card-footer">
+      <view class="like-wrap">
+        <view class="like-user-list">
+          <view class="like-user-item">
+            <view class="user-avatar">
+              <image class="avatar" src="../../assets/images/account-outline.png" mode="aspectFill" lazy-load="true"></image>
+            </view>
+          </view>
+          <view class="like-user-item">
+            <view class="user-avatar">
+              <image class="avatar" src="../../assets/images/account-outline.png" mode="aspectFill" lazy-load="true"></image>
+            </view>
+          </view>
+          <view class="like-user-item">
+            <view class="user-avatar">
+              <image class="avatar" src="../../assets/images/account-outline.png" mode="aspectFill" lazy-load="true"></image>
+            </view>
+          </view>
+        </view>
+        <view class="like-info">3人觉得很赞</view>
+      </view>
+      <view class="tool-bar">
+        <view class="tool-btn" bindtap="follow">
+          <image class="icon" src="../../assets/images/heart-outline-red.png" mode="aspectFill" lazy-load="true"></image>
+        </view>
+        <view class="tool-btn" bindtap="toCommentPage">
+          <image class="icon" src="../../assets/images/message-text-outline.png" mode="aspectFill" lazy-load="true"></image>
+        </view>
+        <view class="tool-btn" bindtap="share">
+          <image class="icon" src="../../assets/images/launch.png" mode="aspectFill" lazy-load="true"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

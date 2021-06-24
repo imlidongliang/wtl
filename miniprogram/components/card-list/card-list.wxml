@@ -1,0 +1,4 @@
+<view class="card-list">
+  <card tag-class="card-item"></card>
+  <card tag-class="card-item"></card>
+</view>
