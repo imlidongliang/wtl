@@ -1,5 +1,62 @@
 /* miniprogram/pages/index/index.wxss */
+.page-header {
+    padding-bottom: 120rpx;
+    background-color: #32c55b;
+}
+
 .search-wrap {
     padding-top: 20rpx;
     padding-bottom: 30rpx;
+}
+
+.home-tab {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.home-tab .tab-scroll {
+    flex: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.home-tab .tab-scroll--box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-tab .tab-scroll-item {
+    position: relative;
+    flex-shrink: 0;
+    height: 100%;
+    padding: 6px 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.home-tab .tab-scroll-item::after {
+    content: '';
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.home-tab .tab-scroll-item.active {
+    font-weight: 700;
+}
+
+.home-tab .tab-scroll-item.active::after {
+    display: block;
+}
+
+.home-list {
+    margin-top: -70rpx;
 }

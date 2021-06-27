@@ -3,7 +3,8 @@
   "navigationBarTextStyle": "white",
   "navigationStyle": "custom",
   "usingComponents": {
-    "p-head": "../../../components/head/head",
-    "search-bar": "../../../components/search-bar/search-bar"
+    "search-bar": "../../../components/search-bar/search-bar",
+    "navigation-bar": "../../../components/navigation-bar/navigation-bar",
+    "card-list": "../../../components/card-list/card-list"
   }
 }

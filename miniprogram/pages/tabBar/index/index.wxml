@@ -1,6 +1,17 @@
-<p-head title="广场">
+<view class="page-header">
+    <navigation-bar title="广场" textAlign="left" color="#ffffff" background="#32c55b"></navigation-bar>
     <search-bar tag-class="search-wrap"></search-bar>
-</p-head>
-<view class="class">
-    <text>这是首页</text>
+    <view class="home-tab">
+        <scroll-view class="tab-scroll" scroll-x="true">
+            <view class="tab-scroll--box">
+                <view class="tab-scroll-item {{ index === activeTab? 'active': ''}}" wx:for="{{tabs}}" wx:key="index" data-index="{{index}}" bind:tap="handleTab">
+                    {{ item.title }}
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+<view class="home-list">
+    <card-list wx:if="{{activeTab === 0}}"></card-list>
+    <card-list wx:elif="{{activeTab === 1}}"></card-list>
 </view>
