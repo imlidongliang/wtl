@@ -1,4 +1,6 @@
 // miniprogram/pages/index/index.js
+var utils = require('../../../utils/utils.js');
+
 Page({
   /**
    * 页面的初始数据
@@ -17,6 +19,24 @@ Page({
       activeTab: index
     })
 
+    if (index === 1) {
+      this.getNearbyData()
+    }
+
+  },
+  getNearbyData() {
+    const that = this
+    utils.getBmapAddress().then(res => {
+      console.log(res)
+
+      wx.showToast({
+        title: '' + res.originalData.result.formatted_address,
+        icon: 'none',
+        duration: 2000
+      })
+    }).catch(error => {
+      console.log(error)
+    })
   },
 
   /**
